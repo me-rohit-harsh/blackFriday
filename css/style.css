@@ -331,7 +331,30 @@ fieldset label {
     fill: #ffffff;
 }
 
+.loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    background: rgb(3, 0, 19);
+    background: linear-gradient(120deg, rgb(3, 0, 19) 46%, rgb(58, 38, 73) 80%, rgb(69, 31, 151) 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
 
+.loaderbody {
+    height: 100vh;
+    overflow: hidden;
+}
 
 .h1,
 h1 {
@@ -6382,13 +6405,54 @@ blockquote cite {
 
 @media (min-width: 1200px) {
     .bk-server-details .outer {
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 }
 
+.bk-server-details .animate-block {
+    border-radius: 2rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 2;
+}
 
+@media (min-width: 1200px) {
+    .bk-server-details .animate-block {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
 
+.bk-server-details .animate-block .layer {
+    background: rgb(3, 0, 19);
+    background: linear-gradient(120deg, rgb(3, 0, 19) 46%, rgb(58, 38, 73) 80%, rgb(69, 31, 151) 100%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 3;
+    border-radius: 2rem;
+}
 
+.bk-server-details .animate-block .spinner {
+    position: absolute;
+    z-index: 4;
+}
 
 .bk-server-details .inner-block {
     border-radius: 2rem;
@@ -6397,12 +6461,6 @@ blockquote cite {
     padding: 6rem 1.3rem 2.5rem;
     position: relative;
     height: 100%;
-}
-
-@media (min-width: 1200px) {
-    .bk-server-details .inner-block>* {
-        opacity: 0;
-    }
 }
 
 @media (min-width: 1441px) {
@@ -6415,7 +6473,7 @@ blockquote cite {
     position: absolute;
     width: 95px;
     height: 100px;
-    background: url("../images/round1.svg") no-repeat center/contain;
+    background: url("https://www.racknerd.com/BlackFriday/assets/images/round1.svg") no-repeat center/contain;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6609,10 +6667,101 @@ blockquote cite {
         animation-fill-mode: forwards;
     }
 
- 
+    .bk-server-details.active .animate-block {
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-animation: flipAnimation 0.2s linear;
+        animation: flipAnimation 0.2s linear;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
 }
 
+@media (min-width: 1200px) {
+    .spinner {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+}
 
+@media (min-width: 1200px) {
+    .spinnerAnimate1 {
+        -webkit-animation: spinnerAnimate1 5s linear infinite;
+        animation: spinnerAnimate1 5s linear infinite;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+}
+
+@media (min-width: 1200px) {
+    .spinnerAnimate2 {
+        -webkit-animation: spinnerAnimate2 1.5s linear infinite;
+        animation: spinnerAnimate2 1.5s linear infinite;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+}
+
+@media (min-width: 1200px) {
+    .spinnerAnimate3 {
+        -webkit-animation: spinnerAnimate1 1.5s linear infinite;
+        animation: spinnerAnimate1 1.5s linear infinite;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+}
+
+@-webkit-keyframes spinnerAnimate1 {
+    0% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes spinnerAnimate1 {
+    0% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes spinnerAnimate2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinnerAnimate2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
 
 @-webkit-keyframes fadeInAnimation {
     0% {
@@ -7820,6 +7969,15 @@ blockquote cite {
         -webkit-transform: translate(320px, 120px) scale(0);
         transform: translate(320px, 120px) scale(0);
     }
+}
+
+.swipe-text {
+    text-align: center;
+    margin-top: 0.1rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    user-select: none;
 }
 
 /*# sourceMappingURL=app.css.map */
