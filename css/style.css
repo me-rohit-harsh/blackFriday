@@ -337,7 +337,7 @@ fieldset label {
     top: 0;
     width: 100%;
     height: 100vh;
-    z-index: 99999;
+    /* z-index: 99999; */
     background: rgb(3, 0, 19);
     background: linear-gradient(120deg, rgb(3, 0, 19) 46%, rgb(58, 38, 73) 80%, rgb(69, 31, 151) 100%);
     display: -webkit-box;
@@ -6982,6 +6982,9 @@ blockquote cite {
     width: auto;
     height: 1.5rem;
 }
+.bk-footer .logo{
+width: 200px;
+}
 
 .bk-header.fixed-top {
     position: fixed;
@@ -7148,7 +7151,7 @@ blockquote cite {
 
 .bk-footer {
     font-size: 1rem;
-    padding: 3rem 0rem 5rem;
+    padding: 3rem 0rem 2rem;
     background-color: #020006;
     border-top: 1px solid #3D345C;
 }
@@ -7160,7 +7163,7 @@ blockquote cite {
 }
 
 .bk-footer .h4 {
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
     font-family: "Inter", sans-serif;
     font-weight: 600;
     margin-bottom: 1.5rem;
@@ -7186,7 +7189,11 @@ blockquote cite {
     .bk-footer .contact .icon {
         width: 3rem;
         text-align: center;
+
     }
+}
+.payment{
+    margin-bottom: 40px;
 }
 
 .bk-footer .contact:hover {
