@@ -20,8 +20,8 @@
 
 @font-face {
     font-family: "Aeonik Pro";
-    src: url("../fonts/7917d54e71b48a4e31d5d543d8ea59f7.eot");
-    src: url("../fonts/7917d54e71b48a4e31d5d543d8ea59f7.eot?#iefix") format("embedded-opentype"), url("../fonts/7917d54e71b48a4e31d5d543d8ea59f7.woff") format("woff"), url("../fonts/7917d54e71b48a4e31d5d543d8ea59f7.woff2") format("woff2"), url("../fonts/7917d54e71b48a4e31d5d543d8ea59f7.ttf") format("truetype"), url("../fonts/7917d54e71b48a4e31d5d543d8ea59f7.svg#Aeonik Pro Thin") format("svg");
+    /* src: url("../fonts/7917d54e71b48a4e31d5d543d8ea59f7.eot"); */
+    /* src: url("../fonts/7917d54e71b48a4e31d5d543d8ea59f7.eot?#iefix") format("embedded-opentype"), url("../fonts/7917d54e71b48a4e31d5d543d8ea59f7.woff") format("woff"), url("../fonts/7917d54e71b48a4e31d5d543d8ea59f7.woff2") format("woff2"), url("../fonts/7917d54e71b48a4e31d5d543d8ea59f7.ttf") format("truetype"), url("../fonts/7917d54e71b48a4e31d5d543d8ea59f7.svg#Aeonik Pro Thin") format("svg"); */
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -29,8 +29,8 @@
 
 @font-face {
     font-family: "Aeonik Pro";
-    src: url("../fonts/12ff62164c9778917bddb93c6379cf47.eot");
-    src: url("../fonts/12ff62164c9778917bddb93c6379cf47.eot?#iefix") format("embedded-opentype"), url("../fonts/12ff62164c9778917bddb93c6379cf47.woff") format("woff"), url("../fonts/12ff62164c9778917bddb93c6379cf47.woff2") format("woff2"), url("../fonts/12ff62164c9778917bddb93c6379cf47.ttf") format("truetype"), url("../fonts/12ff62164c9778917bddb93c6379cf47.svg#Aeonik Pro Regular") format("svg");
+    /* src: url("../fonts/12ff62164c9778917bddb93c6379cf47.eot"); */
+    /* src: url("../fonts/12ff62164c9778917bddb93c6379cf47.eot?#iefix") format("embedded-opentype"), url("../fonts/12ff62164c9778917bddb93c6379cf47.woff") format("woff"), url("../fonts/12ff62164c9778917bddb93c6379cf47.woff2") format("woff2"), url("../fonts/12ff62164c9778917bddb93c6379cf47.ttf") format("truetype"), url("../fonts/12ff62164c9778917bddb93c6379cf47.svg#Aeonik Pro Regular") format("svg"); */
     font-weight: 400;
     font-style: normal;
     font-display: swap;
