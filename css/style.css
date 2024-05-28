@@ -18,23 +18,7 @@
     min-width: 54px;
 }
 
-@font-face {
-    font-family: "Aeonik Pro";
-    /* src: url("../fonts/7917d54e71b48a4e31d5d543d8ea59f7.eot"); */
-    /* src: url("../fonts/7917d54e71b48a4e31d5d543d8ea59f7.eot?#iefix") format("embedded-opentype"), url("../fonts/7917d54e71b48a4e31d5d543d8ea59f7.woff") format("woff"), url("../fonts/7917d54e71b48a4e31d5d543d8ea59f7.woff2") format("woff2"), url("../fonts/7917d54e71b48a4e31d5d543d8ea59f7.ttf") format("truetype"), url("../fonts/7917d54e71b48a4e31d5d543d8ea59f7.svg#Aeonik Pro Thin") format("svg"); */
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
 
-@font-face {
-    font-family: "Aeonik Pro";
-    /* src: url("../fonts/12ff62164c9778917bddb93c6379cf47.eot"); */
-    /* src: url("../fonts/12ff62164c9778917bddb93c6379cf47.eot?#iefix") format("embedded-opentype"), url("../fonts/12ff62164c9778917bddb93c6379cf47.woff") format("woff"), url("../fonts/12ff62164c9778917bddb93c6379cf47.woff2") format("woff2"), url("../fonts/12ff62164c9778917bddb93c6379cf47.ttf") format("truetype"), url("../fonts/12ff62164c9778917bddb93c6379cf47.svg#Aeonik Pro Regular") format("svg"); */
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
 
 .bk-obj-md-cover img,
 .bk-obj-cover img {
@@ -182,6 +166,8 @@ fieldset label {
 
 .spacing {
     padding: 4rem 0rem;
+        background: linear-gradient(180deg, #332667 0%, #5744A1 97%) !important;
+
 }
 
 @media (min-width: 1200px) {
@@ -6391,8 +6377,8 @@ blockquote cite {
 .bk-server-details {
     border-radius: 2rem;
     background: rgb(67, 57, 82);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(67, 57, 82)), color-stop(80%, rgba(0, 0, 0, 0)));
-    background: linear-gradient(180deg, rgb(67, 57, 82) 0%, rgba(0, 0, 0, 0) 80%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#7C5BFF), color-stop(80%, rgba(0, 0, 0, 0)));
+    /* background: linear-gradient(180deg, rgb(67, 57, 82) 0%, rgba(0, 0, 0, 0) 80%); */
     padding: 1px;
     height: 100%;
 }
@@ -6456,8 +6442,8 @@ blockquote cite {
 
 .bk-server-details .inner-block {
     border-radius: 2rem;
-    background: rgb(3, 0, 19);
-    background: linear-gradient(120deg, rgb(3, 0, 19) 46%, rgb(58, 38, 73) 80%, rgb(69, 31, 151) 100%);
+    /* background: rgb(3, 0, 19); */
+    /* background: linear-gradient(120deg, rgb(3, 0, 19) 46%, rgb(58, 38, 73) 80%, rgb(69, 31, 151) 100%); */
     padding: 6rem 1.3rem 2.5rem;
     position: relative;
     height: 100%;
@@ -6558,8 +6544,8 @@ blockquote cite {
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 2rem;
-    background: rgb(55, 24, 124);
-    background: linear-gradient(48deg, rgb(55, 24, 124) 0%, rgba(34, 5, 47, 0) 59%);
+    background: #5744A1;
+    background: linear-gradient(48deg, #5744A1 0%, rgba(34, 5, 47, 0) 59%);
     padding: 2rem 2rem 1.4rem;
     border-radius: 3rem;
 }
@@ -6648,7 +6634,7 @@ blockquote cite {
     padding: 1.1rem 3rem;
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .bk-server-details.active .outer {
         -webkit-animation: overflowAnimation 0.1s ease-in;
         animation: overflowAnimation 0.1s ease-in;
@@ -6675,7 +6661,7 @@ blockquote cite {
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
     }
-}
+} */
 
 @media (min-width: 1200px) {
     .spinner {
@@ -6835,10 +6821,14 @@ blockquote cite {
     padding: 1px;
     height: 100%;
 }
-
+#price-holder{
+    /* background-color: #231b46 !important; */
+    background: linear-gradient(180deg, #05030f 0%, #332667 97%);
+    padding-bottom: 50px !important;
+}
 .bk-speciality .inner-bk {
-    background: rgb(18, 7, 49);
-    background: linear-gradient(50deg, rgb(18, 7, 49) 0%, rgb(3, 0, 19) 77%);
+    /* background: rgb(18, 7, 49); */
+    background: linear-gradient(180deg, #1d1145 0%, #5744A1 97%);
     border-radius: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6890,7 +6880,7 @@ blockquote cite {
 
 .bk-header {
     width: 100%;
-    background-color: #030013;
+    background-color: #5744A1;
     font-size: 1rem;
     line-height: 1.2;
     -webkit-transition: 0.4s;
@@ -6943,7 +6933,7 @@ blockquote cite {
 }
 
 .bk-header nav .current_page_item a {
-    color: #7C5BFF !important;
+    color: #000 !important;
 }
 
 .bk-header nav>ul {
@@ -7152,7 +7142,7 @@ width: 200px;
 .bk-footer {
     font-size: 1rem;
     padding: 3rem 0rem 2rem;
-    background-color: #020006;
+    background-color: #5e4aac;
     border-top: 1px solid #3D345C;
 }
 
